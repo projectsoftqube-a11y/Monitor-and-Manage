@@ -7,6 +7,7 @@ import Header from "@/components/layout/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import TawkTracker from "@/components/TawkTracker";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -146,6 +147,7 @@ export default function RootLayout({
         {/* Tawk.to Real-time tracking and push alerts loaded purely client-side after hydration */}
         <TawkTracker />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
