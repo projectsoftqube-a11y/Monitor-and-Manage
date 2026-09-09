@@ -5,7 +5,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Header from "@/components/layout/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import TawkTracker from "@/components/TawkTracker";
+// import TawkTracker from "@/components/TawkTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -144,8 +144,8 @@ export default function RootLayout({
           <WhatsAppButton />
         </SmoothScroll>
 
-        {/* Tawk.to Real-time tracking and push alerts loaded purely client-side after hydration */}
-        <TawkTracker />
+        {/* Tawk.to chat widget temporarily disabled */}
+        {/* <TawkTracker /> */}
         <Analytics />
         <SpeedInsights />
       </body>
