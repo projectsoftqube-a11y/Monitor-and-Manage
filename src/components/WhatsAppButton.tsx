@@ -13,6 +13,14 @@ export default function WhatsAppButton() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <div className="relative">
+        {/* Ambient Background Glow — large, soft, breathing */}
+        <motion.div
+          className="absolute inset-0 rounded-full bg-[#25D366] blur-2xl pointer-events-none"
+          style={{ transform: "scale(2.2)" }}
+          animate={{ opacity: [0.2, 0.45, 0.2] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        />
+
         {/* Pulsing Backlight Glows */}
         <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 blur-md animate-ping pointer-events-none" style={{ animationDuration: "2.5s" }} />
         <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-25 blur-lg pointer-events-none" />
