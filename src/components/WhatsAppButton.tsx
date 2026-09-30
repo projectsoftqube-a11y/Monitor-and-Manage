@@ -27,8 +27,8 @@ export default function WhatsAppButton() {
   }, [isOpen]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <div className="relative flex flex-col items-end">
+    <div className="fixed bottom-6 left-6 z-50">
+      <div className="relative flex flex-col items-start">
         <AnimatePresence>
           {isOpen && (
             <motion.div
